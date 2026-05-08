@@ -22,8 +22,10 @@ mlruns/
 
 # =============================================================================
 # Demo and log outputs — generated at runtime
+# Ignore generated artifacts inside demo_output/ but track UI screenshots
 # =============================================================================
-demo_output/
+demo_output/*.txt
+demo_output/s[0-9]_*.png
 logs/
 models/denial_letter_demo.txt
 models/adjuster_summary_demo.txt
