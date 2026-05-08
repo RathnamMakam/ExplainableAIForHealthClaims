@@ -1,0 +1,47 @@
+paths:
+  data_raw_synpuf: data/raw/synpuf
+  data_raw_meps: data/raw/meps
+  data_processed: data/processed
+  data_reference: data/reference
+  models: models
+  mlruns: mlruns
+
+model:
+  name: xgboost_claims
+  params:
+    device: cuda
+    n_estimators: 500
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    eval_metric: auc
+    early_stopping_rounds: 20
+  test_size: 0.2
+  random_state: 42
+
+lightgbm:
+  params:
+    device: gpu
+    n_estimators: 500
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    metric: auc
+
+shap:
+  max_display: 20
+  background_samples: 100
+
+lime:
+  num_features: 10
+  num_samples: 1000
+
+api:
+  host: 0.0.0.0
+  port: 8000
+
+dashboard:
+  api_base_url: http://localhost:8000
+  port: 8501
