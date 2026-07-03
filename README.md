@@ -185,7 +185,7 @@ Install CUDA Toolkit 12.4 from [developer.nvidia.com](https://developer.nvidia.c
 cd C:\Data\FrontlineProjects\ExplainableAIForHealthClaims
 ```
 
-### 3. Create the three virtual environments
+### 3. Create the three virtual environments each for data, model and api
 
 ```powershell
 python -m venv .venv-data
