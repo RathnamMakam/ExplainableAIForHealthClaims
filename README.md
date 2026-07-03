@@ -1,6 +1,6 @@
 # XAI Health Insurance Claims
 
-An end-to-end **Explainable AI** demo for health insurance claims processing, running fully local on Windows 11 with GPU acceleration. The system scores claims for denial risk, explains every decision using SHAP and LIME, generates ACA-compliant denial letters, and logs every adjuster override for regulator audit.
+An end-to-end **Explainable AI** demo for health insurance claims processing, running fully local on Windows 11 with GPU acceleration. The system scores claims for denial risk, explains every decision using SHAP and LIME, generates ACA-compliant denial letters, and logs every adjuster override for regulator audit. Since this solution runs locally, this is safe and secure with no data leakage. 
 
 ---
 
